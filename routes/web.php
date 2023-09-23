@@ -25,5 +25,8 @@ Route::post('/doctors', [DoctorController::class, 'store'])->name('doctors.store
 Route::get('/doctors', [DoctorController::class, 'index'])->name('doctors.index');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

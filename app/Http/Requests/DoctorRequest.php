@@ -17,7 +17,7 @@ class DoctorRequest extends FormRequest
             'city' => ['required' , 'string'],
             'neighborhood' => ['required', 'string'],
             'street' => ['required', 'string'],
-            'specialties' => ['required', 'array']
+            'specialties' => ['required', 'array','min:2']
         ];
     }
 }
